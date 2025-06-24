@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <style>
+    
+
+
+.input {
+  border-radius: 10px;
+  outline: 2px solid #FFECD6;;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+
+    .button2 {
+      font-family: "Source Code Pro", monospace;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #FFECD6;;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background:#0E46A3;
+  border: 1px solid #0E46A3;
+
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+    body {
+      background-color: #FFECD6;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .c {
+      position: relative;
+      height: 300px;
+      background-color:#FFECD6;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-left:15px;
+      padding-top: 50px; /* Reduced top padding */
+      transition: background-color 0.3s;
+    }
+     .c2 {
+      color:#FFECD6;
+      position: stciky;
+      height: 300px;
+      background-color:#0E46A3;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top:200px;
+      padding-top:90px;
+      transition: background-color 0.3s;
+    }
+     .a4 {
+
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 500px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+     .a41 {
+
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      padding-top:80px;
+      margin-left: 700px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .a42 {
+
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 600px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+   .a5 {
+      display: inline;
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 500px;
+      
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .c1 {
+      width: 80%;
+      height: 500px;
+      background-color:#FFECD6;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      padding-top:50px;
+      margin-left:50px;
+      transition: background-color 0.3s;
+      color:#0E46A3;
+    }
+     .c6 {
+        margin-top:800px;
+      position:relative;
+      width: 40%;
+      height: 500px;
+      background-color:#FFECD6;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      padding-top:80px;
+      margin-left:500px;
+      transition: background-color 0.3s;
+      color:#0E46A3;
+    }
+
+
+    .c h5 {
+      display: inline-block;
+      color: #0E46A3;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+   
+
+    .a3 {
+      display: inline;
+      color:#0E46A3;
+      font-size: 200%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 70px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .a1 {
+      display: inline;
+      color:#0E46A3;
+      font-size: 100%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 200px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .a2 {
+      display: inline;
+      color: #0E46A3;
+      font-size: 100%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    header a {
+      color:#0E46A3;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left:20px;
+      margin-right:100px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    header a:hover {
+      background-color: #555;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 20px 40px;
+      background-color: #FFB800;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #FFA500;
+    }
+    a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+  </style>
+</head>
+<body>
+  <div class="c">
+    <h5 class="a3">S P A C E U P</h5>
+    <h5><a class="a1" href="/adminhome">Home</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/adminabout">About</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/admincontact">Contact</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/adminfindAspot">Find A Spot</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/adminContactDriver">Contact Driver</a></h5> 
+    <h5>/</h5>
+    <h5><a id="useruser" name={{username}} class="a2" href="/adminprofile">Profile: admin</a></h5> 
+  </div>
+
+   <div class="c1">
+    <h1>About SpaceUp</h1>
+Welcome to our car parking application! We are dedicated to providing a seamless parking experience for our users. Whether you're looking for a spot during a bustling college day or a safe space in a crowded college parking lot, SpaceUp has you covered.
+
+<h1>Our Mission</h1>
+Our mission is to revolutionize the way people park at RSET. We aim to make parking convenient, efficient, and stress-free. With SpaceUp, you can say goodbye to circling around for a spot or worrying about contacting drivers who block your vehicle.
+
+<h1>Features</h1>
+<u1>
+  <li><b>Real-time Parking Availability: </b>Find available parking spots near you in real-time.</li>
+  <li><b>Contact Any Driver: </b>Contact any driver parked at the college ground.</li>
+  <li><b>Marking your parking spot: </b>Indicate where you park, for ease of finding your vehicle, and reserving your spot for the day.</li>
+  <li><b>Carpool: </b>Request or put in carpool rides with other fellow students.</li>
+
+</u1>
+
+<h1>Our Team</h1>
+We are a dedicated team of developers, designers, and parking enthusiasts committed to improving the parking experience at RSET. Our passion drives us to create innovative solutions that make parking easier for everyone at RSET.
+
+<h3>Meet our team:</h3>
+<ul>
+    <li>Ashil Thomas</li>
+     <li>A S Mohamad Mehfil</li>
+      <li>Navaneeth S. Anil</li>
+       <li>Neha Thomas</li>
+</ul>
+
+<h1>Contact Us</h1>
+Have a question or feedback? We'd love to hear from you! Contact us at <b>spaceup@gmail.com</b> or visit our <b>Contact Us</b> page.
+
+Thank you for choosing SpaceUp. We look forward to helping you park smarter!
+
+
+
+    <br><br>
+  </div>
+
+  <div class="c6">
+    <img src="logo.gif">
+  </div>
+
+  <div class="c2">
+    <h5 class="a5">Stay updated with SpaceUp's latest updates:   </h5>
+    <input type="text" placeholder="Enter Email..." name="text" class="input">
+    <h5 class="a41">Privacy Policy</h5>
+    <h5 class="a4">Spcace is a parking solution application base in India.</h5>
+    <h5 class="a42"> Copyright © 2024 SpaceUp Design Ltd.</h5>
+
+  </div>
+</body>
+</html>

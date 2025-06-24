@@ -1,0 +1,1065 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <style>
+
+    .rectangle01 {
+      display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #E9F8F9;
+        margin-left:1200px;
+        margin-top:120px;
+    }
+
+    .circle3 {
+      display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #E9F8F9;
+        border-radius: 50%;
+        margin-top:30px;
+        margin-left:1500px;
+    }
+    .circle1 {
+      display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #E9F8F9;
+        border-radius: 50%;
+        margin-left:60px;
+        margin-top:50px;
+    }
+
+    .rectangle {
+      display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #E9F8F9;
+        margin-left:100px;
+        margin-top:100px;
+    }
+    .rectangle1 {
+      display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #0974f1;
+        margin-left:50px;
+        margin-top:40px;
+    }
+    .rectangle2 {
+      display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #9AC8CD;
+        margin-left:50px;
+        margin-top:40px;
+    }
+    .circle {
+      display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #E9F8F9;
+        border-radius: 50%;
+        margin-left:50px;
+    }
+
+ .vertical-line {
+      position: absolute;
+      margin-top:440px;
+      margin-left:200px;
+      height:900px;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 3px;
+      background-color: #0E46A3;
+    } 
+    .vertical-line1 {
+      position: absolute;
+      margin-top:440px;
+      margin-left:520px;
+      height:900px;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 3px;
+      background-color: #0E46A3;
+    } 
+    .horizontal-line {
+      position: absolute;
+      margin-left: 300px;
+      height: 3px;
+      width: 1250px;
+      margin-top:90px;
+      background-color: #0E46A3;
+    }
+    .horizontal-line1 {
+      position: absolute;
+      margin-top: 330px;
+      margin-left: 300px;
+      height: 3px;
+      width: 1250px;
+      background-color: #0E46A3;
+    }
+    .horizontal-line2 {
+      position: absolute;
+      margin-top: 560px;
+      margin-left: 300px;
+      height: 3px;
+      width: 1250px;
+      background-color: #0E46A3;
+    }
+    .horizontal-line3 {
+      position: absolute;
+      margin-top: 810px;
+      margin-left: 300px;
+      height: 3px;
+      width: 1250px;
+      background-color: #0E46A3;
+    }
+    .horizontal-line4 {
+     position: absolute;
+      margin-top: 1050px;
+      margin-left: 300px;
+      height: 3px;
+      width: 1250px;
+      background-color: #0E46A3;
+    
+    }
+     .horizontal-line5 {
+     position: absolute;
+      margin-top: 330px;
+      margin-left: 300px;
+      height: 3px;
+      width: 1250px;
+      background-color: #0E46A3;
+    }
+
+.card1 {
+  position: relative;
+  display: inline-block; 
+  align-items: center;
+  width: 320px;
+  box-shadow: 0 100px 200px rgba(14, 70, 163, 0.2); /* Updated shadow color */
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #0E46A3;
+  border: 2px solid #313131;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  margin-left: 180px;
+}
+
+.card2 {
+  position: relative;
+  display: inline-block; 
+  align-items: center;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(14, 70, 163, 0.2); /* Updated shadow color */
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #0E46A3;
+  border: 2px solid #313131;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  margin-left: 200px;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+  border-color: #0974f1;
+}
+
+
+.content {
+  font-family: "Source Code Pro", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .para {
+  line-height: 1.5;
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: #0974f1;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+  border-color: #0974f1;
+}
+
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
+
+
+.input {
+  border-radius: 10px;
+  outline: 2px solid #FFECD6;;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+
+    .button2 {
+      font-family: "Source Code Pro", monospace;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #FFECD6;;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background:#0E46A3;
+  border: 1px solid #0E46A3;
+
+}
+
+.button213 {
+      font-family: "Source Code Pro", monospace;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #FFECD6;;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background:#0E46A3;
+  border: 1px solid #0E46A3;
+  margin-top:70px;
+  margin-left: 100px;
+}
+.button213:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+.button213:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button213:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button213:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button213:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button213:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+    body {
+      background-color: #FFECD6;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .c {
+      position: relative;
+      height: 300px;
+      background-color:#FFECD6;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-left:15px;
+      padding-top: 50px; /* Reduced top padding */
+      transition: background-color 0.3s;
+    }
+     .c2 {
+      align-items: center;
+      color:#FFECD6;
+      position: stciky;
+      height: 300px;
+      background-color:#0E46A3;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top:70px;
+      padding-top:50px;
+      transition: background-color 0.3s;
+    }
+     .a4 {
+
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 500px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+     .a41 {
+
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      padding-top:80px;
+      margin-left: 700px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .a42 {
+
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 600px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+   .a5 {
+
+      display: inline;
+      color:#FFECD6;
+      font-size: 70%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 500px;
+      
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+     .c6 {
+      position:relative;
+      width: 40%;
+      float: right;
+      height: 500px;
+      background-color:#FFECD6;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      padding-top:80px;
+      margin-left:100px;
+      transition: background-color 0.3s;
+      color:#0E46A3;
+    }
+
+
+    .c h5 {
+      display: inline-block;
+      color: #0E46A3;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+   
+
+    .a3 {
+      display: inline;
+      color:#0E46A3;
+      font-size: 200%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 70px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .a1 {
+      display: inline;
+      color:#0E46A3;
+      font-size: 100%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 100px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .a2 {
+      display: inline;
+      color: #0E46A3;
+      font-size: 100%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    header a {
+      color:#0E46A3;
+      font-size: 150%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      margin-left:20px;
+      margin-right:100px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    header a:hover {
+      background-color: #555;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 20px 40px;
+      background-color: #FFB800;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #FFA500;
+    }
+    a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+.box {
+    background-color: gray;
+    border: none; /* Remove default button styling */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+.button21 {
+      font-family: "Source Code Pro", monospace;
+      display: block;
+      transition: all 0.2s ease-in;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      color: #FFECD6;
+      padding: 0.7em 1.0em;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px; /* Adjust border-radius for rounded corners */
+      background: #0E46A3;
+      border: 1px solid #0E46A3;
+      margin-left: 100px;
+      margin-top: 30px;
+    }
+    .button212 {
+      font-family: "Source Code Pro", monospace;
+      display: inline-block;
+      transition: all 0.2s ease-in;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      color: #FFECD6;
+      padding: 0.7em 1.0em;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px; /* Adjust border-radius for rounded corners */
+      background: #0E46A3;
+      border: 1px solid #0E46A3;
+      margin-left: 100px;
+      margin-top: 30px;
+    }
+
+ .button2 {
+  font-family: "Source Code Pro", monospace;
+  display: inline-block; /* Change from block to inline-block */
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #FFECD6;
+  padding: 0.7em 1.0em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  background: #0E46A3;
+  border: 1px solid #0E46A3;
+  margin-left: 100px;
+  margin-top: 1px; /* Adjust margin-top for spacing */
+}
+
+.button22 {
+  font-family: "Source Code Pro", monospace;
+  display: inline-block; /* Change from block to inline-block */
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #FFECD6;
+  padding: 0.7em 1.0em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  background: #0E46A3;
+  border: 1px solid #0E46A3;
+  margin-left: 50px;
+  margin-top: 0.5px; /* Adjust margin-top for spacing */
+}
+.button23 {
+  font-family: "Source Code Pro", monospace;
+  display: block; /* Change from block to inline-block */
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #FFECD6;
+  padding: 0.7em 1.0em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  background: #0E46A3;
+  border: 1px solid #0E46A3;
+  margin-left: 50px;
+  margin-top: 0.5px; /* Adjust margin-top for spacing */
+}
+.container-wrapper {
+ 
+  display: inline-block; /* Use flexbox for layout */
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 40px;
+  justify-content: start;
+  align-content: center;
+  margin-left: 350px;
+  margin-top: 20px;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 40px;
+  justify-content: start;
+  align-content: center;
+  margin-left: 350px; /* Adjust margin-left for spacing */
+  margin-top: 100px; /* Adjust margin-top for spacing */
+  grid-row: 3; /* Place container3 below container2 */
+}
+
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 40px;
+  justify-content: start;
+  align-content: center;
+  margin-left: 350px; /* Adjust margin-left for spacing */
+  margin-top: 100px; /* Adjust margin-top for spacing */
+  grid-row: 3; /* Place container3 below container2 */
+}
+.container5 {
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 40px;
+  justify-content: start;
+  align-content: center;
+  margin-left: 350px; /* Adjust margin-left for spacing */
+  margin-top: 100px; /* Adjust margin-top for spacing */
+  grid-row: 3; /* Place container3 below container2 */
+}   
+.container6 {
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 40px;
+  justify-content: start;
+  align-content: center;
+  margin-left: 350px; /* Adjust margin-left for spacing */
+  margin-top: 100px; /* Adjust margin-top for spacing */
+  grid-row: 3; /* Place container3 below container2 */
+}
+
+
+
+  .box {
+    font-family: "Source Code Pro", monospace;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+  z-index: 1;
+  color: #FFECD6;
+  padding:10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  background: #0E46A3;
+  border: 1px solid #0E46A3;
+    border: none; /* Remove default button styling */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+
+    .c1 {
+      width: 30%;
+      float: right;
+      height: 40px;
+      background-color:#FFECD6;
+      font-size: 100%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top:200px;
+      margin-right:1100px;
+      transition: background-color 0.3s;
+      color:#0E46A3;
+    }
+    .c12 {
+      width: 100%;
+      float: right;
+      height: 500px;
+      background-color:#FFECD6;
+      font-size: 450%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      padding-top:500px;
+      margin-left:20px;
+      transition: background-color 0.3s;
+      color:#0E46A3;
+    }
+    .c11 {
+      width: 93%;
+      float: right;
+      height: 600px;
+      background-color:#FFECD6;
+      font-size: 200%;
+      font-family: "Source Code Pro", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-left:10px;
+      transition: background-color 0.3s;
+      color:#0E46A3;
+    }
+   
+  .h51{
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+
+  </style>
+</head>
+<body>
+   <div class="c">
+    <h5 class="a3">S P A C E U P</h5>
+    <h5><a class="a1" href="/home">Home</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/about">About</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/contact">Contact</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/findAspot">Find A Spot</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/Carpool">Carpool</a></h5> 
+    <h5>/</h5>
+    <h5><a class="a2" href="/ContactDriver">Contact Driver</a></h5> 
+    <h5>/</h5>
+    <h5><a id="useruser" name={{username}} class="a2" href="/profile">Profile: {{username}}</a></h5> 
+    <button class="button213"><a href="/findAspot">Scooter Parking</a></button>
+    <div class="rectangle"></div>
+    <h5>: Entrace to college </h5>
+    <div class="circle"></div>
+    <h5>: Exit from college </h5>
+    <div class="rectangle1"></div>
+    <h5>: Avilable </h5>
+    <div class="rectangle2"></div>
+    <h5>: Parked</h5>
+    
+  </div>
+
+   <div class="rectangle01"></div>
+    <div class="c1">
+    SCOOTER PARKING 
+  </div>
+
+    
+   <form action="/findAspotcarcar" method="post">
+      <input type="hidden" id="spot" name="spot">
+      <input type="hidden" id="user" name="user">
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line1"></div>
+       <div class="horizontal-line2"></div>
+        <div class="horizontal-line3"></div>
+         <div class="horizontal-line4"></div>
+  <div class="container-wrapper">
+    <div class="container2">
+    <button name="A01" class="box">A01</button>
+    <button name="A02" class="box">A02</button>
+    <button name="A03" class="box">A03</button>
+    <button name="A04" class="box">A04</button>
+    <button name="A05" class="box">A05</button>
+    <button name="A06" class="box">A06</button>
+    <button name="A07" class="box">A07</button>
+    <button name="A08" class="box">A08</button>
+    <button name="A09" class="box">A09</button>
+    <button name="A10" class="box">A10</button>
+    <button name="A11" class="box">A11</button>
+    <button name="A12" class="box">A12</button>
+    <button name="A13" class="box">A13</button>
+    <button name="A14" class="box">A14</button>
+    <button name="A15" class="box">A15</button>
+    <button name="A16" class="box">A16</button>
+    <button name="A17" class="box">A17</button>
+    <button name="A18" class="box">A18</button>
+    <button name="A19" class="box">A19</button>
+    <button name="A20" class="box">A20</button>
+  </div>
+  
+  <div class="container3">
+    <button name="B01" class="box">B01</button>
+    <button name="B02" class="box">B02</button>
+    <button name="B03" class="box">B03</button>
+    <button name="B04" class="box">B04</button>
+    <button name="B05" class="box">B05</button>
+    <button name="B06" class="box">B06</button>
+    <button name="B07" class="box">B07</button>
+    <button name="B08" class="box">B08</button>
+    <button name="B09" class="box">B09</button>
+    <button name="B10" class="box">B10</button>
+    <button name="B11" class="box">B11</button>
+    <button name="B12" class="box">B12</button>
+    <button name="B13" class="box">B13</button>
+    <button name="B14" class="box">B14</button>
+    <button name="B15" class="box">B15</button>
+    <button name="B16" class="box">B16</button>
+    <button name="B17" class="box">B17</button>
+    <button name="B18" class="box">B18</button>
+    <button name="B19" class="box">B19</button>
+    <button name="B20" class="box">B20</button>
+  </div>
+   <div class="container4">
+    <button name="C01" class="box">C01</button>
+    <button name="C02" class="box">C02</button>
+    <button name="C03" class="box">C03</button>
+    <button name="C04" class="box">C04</button>
+    <button name="C05" class="box">C05</button>
+    <button name="C06" class="box">C06</button>
+    <button name="C07" class="box">C07</button>
+    <button name="C08" class="box">C08</button>
+    <button name="C09" class="box">C09</button>
+    <button name="C10" class="box">C10</button>
+    <button name="C11" class="box">C11</button>
+    <button name="C12" class="box">C12</button>
+    <button name="C13" class="box">C13</button>
+    <button name="C14" class="box">C14</button>
+    <button name="C15" class="box">C15</button>
+    <button name="C16" class="box">C16</button>
+    <button name="C17" class="box">C17</button>
+    <button name="C18" class="box">C18</button>
+    <button name="C19" class="box">C19</button>
+    <button name="C20" class="box">C20</button>
+  </div>
+  <div class="container5">
+    <button name="D01" class="box">D01</button>
+    <button name="D02" class="box">D02</button>
+    <button name="D03" class="box">D03</button>
+    <button name="D04" class="box">D04</button>
+    <button name="D05" class="box">D05</button>
+    <button name="D06" class="box">D06</button>
+    <button name="D07" class="box">D07</button>
+    <button name="D08" class="box">D08</button>
+    <button name="D09" class="box">D09</button>
+    <button name="D10" class="box">D10</button>
+    <button name="D11" class="box">D11</button>
+    <button name="D12" class="box">D12</button>
+    <button name="D13" class="box">D13</button>
+    <button name="D14" class="box">D14</button>
+    <button name="D15" class="box">D15</button>
+    <button name="D16" class="box">D16</button>
+    <button name="D17" class="box">D17</button>
+    <button name="D18" class="box">D18</button>
+    <button name="D19" class="box">D19</button>
+    <button name="D20" class="box">D20</button>
+  </div>
+
+  <div class="container6">
+    <button name="E01" class="box">E01</button>
+    <button name="E02" class="box">E02</button>
+    <button name="E03" class="box">E03</button>
+    <button name="E04" class="box">E04</button>
+    <button name="E05" class="box">E05</button>
+    <button name="E06" class="box">EC06</button>
+    <button name="E07" class="box">E07</button>
+    <button name="E08" class="box">E08</button>
+    <button name="E09" class="box">E09</button>
+    <button name="E10" class="box">E10</button>
+    <button name="E11" class="box">E11</button>
+    <button name="E12" class="box">E12</button>
+    <button name="E13" class="box">E13</button>
+    <button name="E14" class="box">E14</button>
+    <button name="E15" class="box">E15</button>
+    <button name="E16" class="box">E16</button>
+    <button name="E17" class="box">E17</button>
+    <button name="E18" class="box">E18</button>
+    <button name="E19" class="box">E19</button>
+    <button name="E20" class="box">E20</button>
+  </div>
+    
+  </div>
+</form>
+
+<div class="circle1"></div>
+<div class="circle3"></div>
+
+
+  <table id="checks-table" style="display: none;">
+  {{#each checks}}
+  <tr>
+    <td>{{this.user}}</td>
+    <td>{{this.spot}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+  <div class="c2">
+    <h5 class="a5">Stay updated with SpaceUp's latest updates:   </h5>
+    <input type="text" placeholder="Enter Email..." name="text" class="input">
+    <h5 class="a41">Privacy Policy</h5>
+    <h5 class="a4">Spcace is a parking solution application base in India.</h5>
+    <h5 class="a42"> Copyright © 2024 SpaceUp Design Ltd.</h5>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.box');
+    const hiddenInput = document.querySelector('input[name="spot"]');
+    let spotValue = null;
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            hiddenInput.value = this.name;
+            buttons.forEach(btn => {
+                btn.style.backgroundColor = ''; // Reset background color of all buttons
+            });
+            this.style.backgroundColor = '#9AC8CD'; // Change background color of clicked button
+            const table = document.getElementById('checks-table');
+
+    // Iterate over each row in the table
+    table.querySelectorAll('tr').forEach(row => {
+        // Get the spot value from the second column of each row
+        spotValue = row.cells[1].textContent;
+
+        // Change the color of the button with the name equal to the spot value
+        buttons.forEach(btn => {
+            if (btn.name === spotValue) {
+                btn.style.backgroundColor = '#9AC8CD'; // Change color for checked spots
+            }
+        });
+    });
+            const val = document.getElementById('useruser').getAttribute('name');
+            document.getElementById('user').value = val;
+        });
+    });
+
+    // Query the hidden table
+    const table = document.getElementById('checks-table');
+
+    // Iterate over each row in the table
+    table.querySelectorAll('tr').forEach(row => {
+        // Get the spot value from the second column of each row
+        spotValue = row.cells[1].textContent;
+
+        // Change the color of the button with the name equal to the spot value
+        buttons.forEach(btn => {
+            if (btn.name === spotValue) {
+                btn.style.backgroundColor = '#9AC8CD'; // Change color for checked spots
+            }
+        });
+    });
+});
+</script>
+
+
+ 
+</body>
+
+</html>
+
+
+
